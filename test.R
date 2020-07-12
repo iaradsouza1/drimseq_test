@@ -1,3 +1,5 @@
+library(DRIMSeq)
+
 # Load data
 load("drimseq_objects.rda")
 
