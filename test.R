@@ -21,6 +21,7 @@ min_samples <- floor(length(ann$sample_id) * 0.7)
 d <- dmFilter(d, min_samps_gene_expr = min_samples, min_samps_feature_expr = 5,
               minor_allele_freq = 5, min_gene_expr = 10, min_feature_expr = 10)
 
+d <- d[1:10,]
 # Estimate precision
 d <- dmPrecision(d)
 
@@ -29,3 +30,8 @@ d <- dmFit(d)
 
 # Test
 d <- dmTest(d)
+
+sessionInfo() 
+
+
+  
